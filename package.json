@@ -1,12 +1,12 @@
 {
-  "name": "vue-histogram-slider",
-  "description": "Range slider with histogram for vue.js",
-  "version": "0.3.8",
+  "name": "vue-histogram-slider-from-to",
+  "description": "Range slider with histogram for vue.js - with ability to pass in initial from and to values for slider",
+  "version": "0.3.9",
   "main": "dist/histogram-slider.umd.min.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/oguzhaninan/vue-histogram-slider.git"
+    "url": "https://github.com/yeasirew/vue-histogram-slider-with-from-to.git"
   },
   "keywords": [
     "vue",
