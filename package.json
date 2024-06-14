@@ -17,11 +17,11 @@
     "histogram-slider"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "prepare": "yarn build",
     "build": "vue-cli-service build --name histogram-slider --entry ./src/lib/HistogramSlider.vue --target lib",
-    "prepublishOnly": "yarn lint && yarn build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prepare": "vue-cli-service build",
+    "prepublishOnly": "vue-cli-service lint && vue-cli-service build",
+    "serve": "vue-cli-service serve"
   },
   "dependencies": {
     "d3-array": "^2.3.2",
@@ -30,7 +30,8 @@
     "d3-selection": "^1.4.0",
     "d3-transition": "^1.2.0",
     "jquery": "3.5",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
@@ -44,14 +45,5 @@
     "lint-staged": "^8.1.5",
     "prettier": "^1.18.2",
     "vue-template-compiler": "^2.6.10"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,vue}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
   }
 }
